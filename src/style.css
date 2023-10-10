@@ -1,0 +1,16 @@
+:root {
+    --header-color: white;
+}
+
+body {
+    background: url("img/pasta.jpg");
+    background-color: black;
+    background-position-x: center ;
+    background-size: 100vh;
+    height: 50%;
+    background-repeat: no-repeat;
+} 
+
+.head {
+    color: var(--header-color);
+}
