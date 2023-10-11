@@ -1,3 +1,9 @@
-import { mainPage } from "./mainPage";
+import { favicon } from "./favicon";
+import { createHeader } from "./header"
+import { homePage } from "./homePage";
+import { tabs } from "./tabs"
 
-mainPage()
+favicon()
+createHeader()
+homePage()
+tabs()

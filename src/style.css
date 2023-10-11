@@ -1,16 +1,79 @@
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+  }
+  
+
 :root {
-    --header-color: white;
+    --header-font-color: rgb(0, 0, 0);
+    --font: "Cormorant Garamond", Times, serif;
 }
 
 body {
     background: url("img/pasta.jpg");
     background-color: black;
-    background-position-x: center ;
-    background-size: 100vh;
-    height: 50%;
+    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
+    margin: 0px;
+    width: 100vw;
 } 
 
-.head {
-    color: var(--header-color);
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+button {
+    font-family: var(--font);
+    font-size: 20px;
+    color: var(--header-font-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+#menuButton {
+    border-bottom: 2px solid rgb(50, 206, 29);
+}
+
+#homeButton {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#contactButton {
+    border-bottom: 2px solid rgb(252, 68, 68);
+}
+
+button:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+button:active {
+    background-color: rgba(128, 128, 128, 0.50);
+}
+
+h1 {
+    font-size: 40px;
+    font-family: var(--font);
+    color: var(--header-font-color);
+}
+
+#content {
+    margin-top: 100px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-family: var(--font);
 }
