@@ -1,4 +1,6 @@
 import { homePage } from "./homePage";
+import { menuPage } from "./menuPage";
+import { contactPage } from "./contactPage";
 
 function tabs() {
     const menuButton = document.getElementById('menuButton')
